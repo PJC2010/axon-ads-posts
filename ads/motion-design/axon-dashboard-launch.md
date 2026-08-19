@@ -1,7 +1,8 @@
 # Axon — "One Clear Picture" motion design ad
 
 Generated with the `06-motion-design-ad` (Seedance 2.0 on Higgsfield) skill, restyled to Axon's
-actual brand system instead of the skill's generic dark/neon defaults.
+actual brand system instead of the skill's generic dark/neon defaults. Render model switched to
+`kling3_0` — see "Notes on generating this" below.
 
 **Product**: Axon — an enterprise-grade business-intelligence dashboard built for small businesses
 that don't have a data team. It pulls sales, ops, and finance data out of scattered spreadsheets
@@ -134,12 +135,16 @@ mark and button centered in the safe zone (middle 60% of frame).
 
 ## Notes on generating this
 
-- Higgsfield model: `seedance_2_5` (text-to-video), matching the skill's target model.
-- Seedance generations are capped well under 30s per call (the skill notes 6s–2min "split into
-  multiple generations if needed") — render this as 3-5 shorter clips along the beat boundaries
-  above and stitch, rather than one 30s call.
-- **Cost check (this session)**: at current pricing a single 6-second `seedance_2_5` clip at
-  16:9 is ~39 credits, and a 10-second clip is ~65 credits. The connected Higgsfield account
-  currently holds **32.11 credits** — not enough for even the shortest single clip, let alone the
-  4-5 clips this script needs. Top up credits before generating, or ask to render a shorter
-  single-beat teaser once balance allows.
+- Higgsfield model: `kling3_0` (switched from the skill's default `seedance_2_5` — see below).
+- Generations are capped well under 30s per call — render this as shorter clips along the beat
+  boundaries above and stitch, rather than one 30s call.
+- **Cost check (this session)**: at current pricing a single 6-second `kling3_0` clip at 16:9 is
+  ~12 credits, and a 10-second clip is ~20 credits — much cheaper than `seedance_2_5` (~39 / ~65
+  credits for the same durations). The connected Higgsfield account currently holds
+  **32.11 credits**, enough for one 10s clip plus a 6s clip, or two 6s clips with credits to
+  spare. Still short of the 4-5 clips a full 30s render needs — top up for the complete ad, or
+  render the opening hook + CTA beats first as a proof of concept.
+- `kling3_0` is Higgsfield's pick for multi-shot, audio, or motion-transfer generations (per the
+  `generate_video` tool defaults) rather than Seedance's single-shot text-to-video strength — the
+  beat-by-beat script above should still translate directly since each beat is scripted as its
+  own short shot already.
