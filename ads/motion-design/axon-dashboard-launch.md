@@ -1,14 +1,19 @@
-# Axon — "One Clear Picture" motion design ad
+# Axon — "Know Your Territory" motion design ad
 
 Generated with the `06-motion-design-ad` (Seedance 2.0 on Higgsfield) skill, restyled to Axon's
 actual brand system instead of the skill's generic dark/neon defaults. Render model switched to
 `kling3_0` — see "Notes on generating this" below.
 
-**Product**: Axon — an enterprise-grade business-intelligence dashboard built for small businesses
-that don't have a data team. It pulls sales, ops, and finance data out of scattered spreadsheets
-and receipts into one calm, readable dashboard.
+**Angle**: territory intelligence, not just internal numbers. The original "one clear picture of
+your business" cut (v1, below) was about tidying up a business owner's *own* messy data. This
+cut leads instead with what Axon shows about the *market around* the business — customer density,
+competitor coverage, and unclaimed opportunity nearby — then lands on the same product.
+**Product**: Axon — an enterprise-grade business-intelligence platform built for small businesses
+that don't have a data team. Beyond internal sales/ops/finance reporting, it maps a business's
+local market — where its customers already are, where competitors are concentrated, and where
+demand exists that no one has claimed yet.
 **Audience**: small business owners — not analysts. They want clarity, not more software to learn.
-**Category**: SaaS Dashboard (BI/analytics)
+**Category**: SaaS Dashboard (BI/analytics), territory/market-intelligence framing
 **Format**: 30s, 16:9 (1920×1080), 30fps — landscape for web/YouTube/LinkedIn.
 A 9:16 cut (1080×1920, same beats, tighter crops) is noted at the bottom for Reels/TikTok/Stories.
 
@@ -35,48 +40,51 @@ trading terminal — so this ad uses Axon's real design tokens instead:
 
 ## Narrative flow
 
-### [OPENING HOOK — 0:00–0:02] — Glitch-to-Clean, reskinned warm
-A cluttered warm-paper desktop: overlapping spreadsheet cells, a curled paper receipt, a sticky
-note, a half-cropped screenshot — all in slightly different, clashing colors, jittering and
-overlapping like an anxious desk. Ink-colored numbers flicker illegibly across them.
-In one clean 0.6s motion (ease-in-out, no glitch/pixelation artifacts — this is a *tidy* snap,
-not a digital malfunction) everything **collapses and reassembles** into a single flat card on
-warm paper: a hairline-bordered Axon dashboard tile with a soft warm drop shadow.
-**Sound**: a soft paper-shuffle whoosh resolving into one gentle, low chime — no bass drop, no synth stab.
+### [OPENING HOOK — 0:00–0:02] — Fog clears off the map
+A flat, top-down neighborhood map fills the frame on warm paper: streets and blocks drawn as thin,
+faint ink outlines — mostly blank, hazy, indistinct, like the business owner can only make out
+their own street. No competitor pins, no customer markers, no color — just a soft desaturated haze
+sitting over most of the map (not a "fog of war" game effect — more like an under-lit photocopy).
+In one clean 0.6s sweep (ease-in-out, left to right) the haze lifts off the map: thin hairline
+deep-ocean (#1A5A75) borders draw themselves around distinct zones, and small clustered dots bloom
+into color — moss green where customers already are, muted gold where an opportunity sits unclaimed.
+**Sound**: a soft, low whoosh as the haze lifts, resolving into one gentle chime as the first zone
+borders settle — no bass drop, no synth stab, no "reveal" sting.
 
 ### [PRODUCT SHOWCASE — 0:02–0:14]
-The single dashboard card scales up gently (ease-out, 0:02–0:03) to fill the frame, revealing the
-full Axon interface on its warm paper canvas: a left sidebar, a top bar, and a grid of metric and
-chart cards, exactly as in the product's real UI kit (`Sidebar`, `TopBar`, `MetricCard`, `ChartCard`).
-Four elements highlight in sequence, each a simple fade + 4px rise (0.5s, ease-out), no morphing
-or particle effects:
+The map holds as the base layer and gently docks to the left half of frame (ease-out, 0:02–0:03)
+as Axon's real dashboard chrome frames it — a left sidebar, a top bar, on the same warm paper
+canvas as the product's real UI kit. Four elements highlight in sequence, each a simple fade +
+4px rise (0.5s, ease-out), no morphing or particle effects:
 
-1. **Revenue MetricCard** (0:02.5–0:04.5): a large Geist Mono number counts up quietly from 0 to
-   this week's revenue figure, deep ocean accent underline, moss-green "+12%" trend tag beside it
-2. **Weekly trend ChartCard** (0:04.5–0:07): a restrained line chart draws itself left-to-right in
-   deep ocean, no glow — just a clean stroke animating along its path
-3. **Connections view** (0:07–0:10): three small integration tiles (bank, POS, invoicing) fade in
-   with a single hairline connecting line each, moss/gold/plum accent dots marking each source
+1. **Territory map card** (0:02.5–0:05): the zoned map settles into a hairline-bordered card;
+   moss-green clusters mark existing customer density, muted-gold zones mark named opportunity
+   areas, a faint dusty-rose outline flags one underserved pocket — three colors only, no gradient noise
+2. **Competitor coverage MetricCard** (0:05–0:07): a Geist Mono number reads "12 competitors,
+   3-mile radius" beside a small plum-colored density dot cluster
+3. **Opportunity callout** (0:07–0:10): a single hairline-bordered pin card labeled in plain
+   sentence case — *"Zone 4 — ~340 potential customers, no competitor coverage"* — fades in beside
+   its gold zone on the map, connected by one thin ocean-blue leader line
 4. **Digest summary** (0:10–0:14): a plain-language one-line insight types in at natural reading
-   speed — *"Revenue is up 12% this week, driven mostly by weekend orders."* — Roboto Slab, ink on paper
+   speed — *"Your strongest growth zone is 4 minutes from your last new customer."* — Roboto Slab, ink on paper
 
 Camera stays static and centered throughout; the only motion is inside the UI. No isometric tilt,
-no 3D rotation — Axon's interface should read as a real, still, trustworthy surface.
-**Sound**: near-silent under this beat — one soft "tick" per element as it settles, -18dB, and a
-single quiet counter-tick sequence under the revenue number.
+no 3D rotation, no game-style camera push into the map — Axon's territory view should read as a
+real, still, trustworthy surface, not a strategy-game reveal.
+**Sound**: near-silent under this beat — one soft "tick" per element as it settles, -18dB.
 
 ### [BENEFIT COMMUNICATION — 0:14–0:23]
 The dashboard fades to 55% opacity and holds. A single display line sets in Roboto Slab, ink,
 fading and rising 4px into place (0.8s, ease-out), centered:
 
-**"One clear picture of your business."**
+**"Know your market, not just your numbers."**
 
 Below it, three short benefit lines enter one at a time with a 0.5s stagger (fade + 4px rise,
 no slide-from-side, no icons bouncing):
 
-- "Every number, in one place — sentence case, no jargon"
-- "Real answers, not more charts to interpret"
-- "No analyst required"
+- "See where your customers already are"
+- "Spot the territory competitors haven't claimed"
+- "Decide where to grow next — with data, not guesswork"
 
 Each line's leading word is set once in deep ocean for emphasis; everything else stays ink.
 **Sound**: silence, then one very soft chime as the display line lands — nothing under the three
@@ -87,15 +95,19 @@ Dashboard returns to full opacity, still static and calm. The Axon mark (`mark.s
 redrawn) fades in top-left, small and quiet. Centered below the dashboard, a single button
 appears — 6px radius, deep ocean fill, warm paper text, soft warm shadow:
 
-**"Try Axon free"**
+**"See your territory — try Axon free"**
 
 The button does one restrained thing only: a 3% scale breathe, ease-in-out, once — no pulsing
 loop, no glow ring. Small supporting line beneath in Geist, muted ink: "No credit card required."
 **Sound**: the same low chime from the opening hook returns, closing the loop — nothing louder.
 
 ### [HOLD — 0:28–0:30]
-Everything settles; last frame holds on the dashboard, mark, and button at full opacity for the
-final 2 seconds so the CTA is legible on a paused frame or thumbnail.
+Everything settles; last frame holds on the map, dashboard, mark, and button at full opacity for
+the final 2 seconds so the CTA is legible on a paused frame or thumbnail.
+
+### Previous cut (v1: "One clear picture of your business")
+The earlier spreadsheet-chaos-to-dashboard cut is preserved in git history on this branch
+(commit `150ff6d`) if you want to compare or splice a beat from it back in.
 
 ---
 
@@ -126,10 +138,11 @@ Pacing: deliberate — one idea on screen at a time, 2-4 second beats, plenty of
 
 ## 9:16 cut (Reels / TikTok / Stories, 15s)
 
-Same four beats compressed: hook (0–1.5s), showcase — revenue card + one chart only (1.5–7s),
-single benefit line only, "One clear picture of your business." (7–11s), CTA (11–15s). Crop the
-dashboard to a single vertical stack of cards rather than the full multi-column grid; keep the
-mark and button centered in the safe zone (middle 60% of frame).
+Same four beats compressed: hook (0–1.5s), showcase — territory map card + the opportunity
+callout only (1.5–7s), single benefit line only, "Know your market, not just your numbers."
+(7–11s), CTA (11–15s). Crop the dashboard to a single vertical stack of cards rather than the
+full multi-column grid, with the map card on top; keep the mark and button centered in the safe
+zone (middle 60% of frame).
 
 ---
 
