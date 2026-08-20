@@ -155,7 +155,20 @@ if a link goes stale.
   neighborhood grid, turquoise pins dropping and accelerating with grade labels, subtle push-in.
   Description folded into the Scene 02 prompt below (not used as a direct video input — Kling 3.0's
   `medias` only accepts image `start_image`/`end_image` roles, not a driving video, for this model).
-- **Scene 01 talking-head reference**: not yet provided — Scene 01 render is on hold pending it.
+- **Scene 01 talking-head reference** — image `ef1268ba-ce18-4c1d-8c44-ceccbe4c8ba0`: clean-shaven
+  Hispanic man, mid-30s, short dark hair, from an existing warehouse/phone-in-hand production
+  still. Used as `start_image` to carry likeness into a new dark-backdrop composition for Scene 01
+  (the original still's warehouse setting and phone prop are not part of Scene 01 — only the person).
+
+### Scene 01 render (0:00–0:04, cold open talking head)
+- Job `15ad12ca-0cc7-41f9-b7c6-beea7b78b3dc` — `kling3_0`, `std`, 9:16, 4s, silent, 6 credits.
+- `start_image`: the person reference above; prompt reframes to a locked-off medium close-up on a
+  plain dark `#1c2127`-family backdrop, no warehouse, no phone, natural talking motion for the
+  first ~2.5s then a held, silent, direct-to-camera beat for the last ~1.5s (matching the script's
+  "one full beat of silence, do not trim").
+- Result: `https://d8j0ntlcm91z4.cloudfront.net/user_3GmcXRvXVHr5NCBu8nriK2N1PIH/hf_20260820_032941_15ad12ca-0cc7-41f9-b7c6-beea7b78b3dc.mp4`
+- No headline text ("organizes → creates") baked in — composited in post, same as Scene 02.
+- No VO audio generated (silent render) — the script's VO/music track is a separate post step.
 
 ### Scene 02 render (0:04–0:12, map + pins cascade + push-in + hold)
 - Job `fe50d89b-3dec-4999-a1eb-0984bf7c4a05` — `kling3_0`, `std`, 9:16, 8s, silent, 12 credits.
@@ -163,5 +176,8 @@ if a link goes stale.
 - Result: `https://d8j0ntlcm91z4.cloudfront.net/user_3GmcXRvXVHr5NCBu8nriK2N1PIH/hf_20260820_032601_fe50d89b-3dec-4999-a1eb-0984bf7c4a05.mp4`
 - No on-screen text/UI baked in by design — the eyebrow label, lower-third chip, and captions in
   the script are composited in post, not generated.
-- Not yet stitched with the cold-open Scene 01 (pending presenter reference) or Scene 01's hard
-  cut at 0:04.0 / music entrance.
+
+Both Scene 01 and Scene 02 are now rendered, covering the full 0:00–0:12 mark requested. They are
+not yet stitched into one file, and the hard cut at 0:04.0 / music entrance is a post-production
+step (add VO, music from 0:04.0, captions, and on-screen text per the script, then cut the two
+clips together).
