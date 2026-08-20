@@ -184,3 +184,22 @@ Both Scene 01 and Scene 02 are now rendered, covering the full 0:00–0:12 mark 
 not yet stitched into one file, and the hard cut at 0:04.0 / music entrance is a post-production
 step (add VO, music from 0:04.0, captions, and on-screen text per the script, then cut the two
 clips together).
+
+### Voiceover
+- Model `seed_audio`, preset voice **Holden** (male) — matches the on-camera presenter's gender
+  for coherence, though the two aren't lip-synced.
+- Scene 01 line — job `9e956891-6cda-4d32-8882-45da3e340f0e`: "A CRM organizes your leads. Axon
+  creates them." First take (job `16fdb613-...`) ran 5.4s with a 1.2s mid-line pause, way over the
+  0:00.5–0:03.0 window; `speech_rate` clamps to `[-50, 100]` (100 = fastest) and at 100 this take
+  lands at **2.26s**, fitting the window with room to spare.
+- Scene 02 line — job `c214a6f1-d773-4c04-8099-f94a7d2c1226` at default rate: "Every platform
+  you're shopping manages jobs that already found you. Jobber. Joby. All of them. None of them
+  tell you where the job is." Raw take was 9.07s (1.4s trailing silence); trimmed locally to
+  **7.85s**, matching the 0:04.5–0:11.5 (7.0s) window closely.
+- Neither clip is placed against picture yet — that sync (VO start offsets, the 0:03.0–0:04.0
+  silent beat, scene cut) is a post-production step.
+
+### Music
+Out of scope for this toolset — Higgsfield's audio generation here is speech-only; music/SFX
+models exist only for a separate internal pipeline and aren't usable for this ad. The 0:04–0:28
+minimal/low/cool-toned bed needs to come from a stock library, licensed track, or composer.
