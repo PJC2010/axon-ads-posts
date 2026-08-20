@@ -137,3 +137,31 @@ Homepage ZIP preview, real interaction @ 60fps: cursor types "77005", hits enter
 1. Cold open alt: "Stop shopping for a better filing cabinet." (same slot, same length)
 2. Scene 04 Storm Mode insert vs evergreen Scene 03 hold
 3. Notification-style alt for Scene 03: lock-screen "11 new A-graded properties in 77005"
+
+---
+
+## Production log (Higgsfield / Kling 3.0)
+
+Model switched from Seedance 2.5 to Kling 3.0 for cost (~3x cheaper per second at the
+`std` tier). Reference assets and renders tracked here as they're produced; render URLs are
+CloudFront-hosted and may expire — re-pull via `job_display`/`jobs_wait` on the job IDs below
+if a link goes stale.
+
+### Reference assets (client-supplied, pre-existing Higgsfield generations on this account)
+- **Map plate (Scene 02 anchor)** — job `ccc10dde-4d4e-4bfe-bf85-e17572df830e`, still
+  `e14ac5ed-48b5-4ed7-8e41-68b66e46b3ce`: flat dark Harris County ZIP-boundary map, one polygon
+  outlined in glowing turquoise `#00a396`, slow push-in. Used as `start_image` for the Scene 02 render below.
+- **Pins-cascade style reference** — job `0dbc321c-e563-4e46-be12-56dfa39020d8`: satellite
+  neighborhood grid, turquoise pins dropping and accelerating with grade labels, subtle push-in.
+  Description folded into the Scene 02 prompt below (not used as a direct video input — Kling 3.0's
+  `medias` only accepts image `start_image`/`end_image` roles, not a driving video, for this model).
+- **Scene 01 talking-head reference**: not yet provided — Scene 01 render is on hold pending it.
+
+### Scene 02 render (0:04–0:12, map + pins cascade + push-in + hold)
+- Job `fe50d89b-3dec-4999-a1eb-0984bf7c4a05` — `kling3_0`, `std`, 9:16, 8s, silent, 12 credits.
+- `start_image`: the map plate still above.
+- Result: `https://d8j0ntlcm91z4.cloudfront.net/user_3GmcXRvXVHr5NCBu8nriK2N1PIH/hf_20260820_032601_fe50d89b-3dec-4999-a1eb-0984bf7c4a05.mp4`
+- No on-screen text/UI baked in by design — the eyebrow label, lower-third chip, and captions in
+  the script are composited in post, not generated.
+- Not yet stitched with the cold-open Scene 01 (pending presenter reference) or Scene 01's hard
+  cut at 0:04.0 / music entrance.
