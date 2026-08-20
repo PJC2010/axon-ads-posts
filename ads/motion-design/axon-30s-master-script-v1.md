@@ -169,6 +169,9 @@ if a link goes stale.
 - Result: `https://d8j0ntlcm91z4.cloudfront.net/user_3GmcXRvXVHr5NCBu8nriK2N1PIH/hf_20260820_032941_15ad12ca-0cc7-41f9-b7c6-beea7b78b3dc.mp4`
 - No headline text ("organizes → creates") baked in — composited in post, same as Scene 02.
 - No VO audio generated (silent render) — the script's VO/music track is a separate post step.
+- **Trim note**: the first ~1.0s of the raw render holds on a near-static frame close to the
+  `start_image` reference before motion begins — trim `0:00–0:01.0` from the head before using
+  this clip (raw render is ~4s, usable footage is the ~2.95s after that trim point).
 
 ### Scene 02 render (0:04–0:12, map + pins cascade + push-in + hold)
 - Job `fe50d89b-3dec-4999-a1eb-0984bf7c4a05` — `kling3_0`, `std`, 9:16, 8s, silent, 12 credits.
